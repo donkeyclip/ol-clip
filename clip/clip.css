@@ -135,12 +135,34 @@ svg{
   display: flex;
   position: absolute;
   flex-direction: column;
-  z-index: 2;
+  z-index: 33;
   text-align: center;
   justify-content: center;
   align-items: center;
+  top: 150%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  position: absolute;
 }
 
 form{
-  display: flex
+  display: flex;
+  margin-top: 30px;
 }
+
+.button,.email{
+  outline: 0;
+  background: #242424;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  margin-left: 10px;
+
+  }
+
+  .email{
+    width: 400px;
+  }
