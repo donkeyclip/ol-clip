@@ -131,7 +131,7 @@ svg{
   font-size: 100px;
   background: #242424;
   width: 900px;
-  height: 400px;
+  height: 550px;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -165,4 +165,16 @@ form{
 
   .email{
     width: 400px;
+  }
+
+
+  #subscribe{
+    border-radius: 156px;
+    border: 4px solid #fff;
+    width: 696px;
+    color: #fff;
+    font-size: 54px;
+    text-decoration: none;
+    padding: 30px;
+    margin-top: 44px;
   }
