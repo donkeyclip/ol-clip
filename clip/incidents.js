@@ -120,7 +120,7 @@ new CSSEffect(
     delay
   }
 );
-export const GotoIncident = (valeu,zoom) =>
+export const GotoIncident = (valeu,zoom,duration=4000) =>
  new Maps.GoTo(
   {
     animatedAttrs: {
@@ -130,6 +130,6 @@ export const GotoIncident = (valeu,zoom) =>
       }
     }
   },
-  { duration: 4000, selector: "!#olmap" }
+  { duration, selector: "!#olmap" }
 );
 

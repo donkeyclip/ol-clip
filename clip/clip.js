@@ -43,7 +43,7 @@ const mapClip = new Maps.Clip(
 
 
 mapClip.addIncident(GotoIncident(bern,1),8200)
-mapClip.addIncident(GotoIncident(finish,1),12200)
+mapClip.addIncident(GotoIncident(finish,4,6000),12200)
 clip.addIncident(mapClip,0)
 clip.addIncident(top("0%",".welcome-later", 1000,"@stagger(0, 600)","easeInOutExpo"), 0);
 clip.addIncident(top("0%",".to-later", 1000,"@stagger(0, 600)","easeInOutExpo"), 0);
@@ -66,6 +66,7 @@ clip.addIncident(height("54px",".welcome-text,.description-text",1000,0,"easeInO
 clip.addIncident(left("72%",".text2",1000,0,"easeInOutExpo"),5200)
 clip.addIncident(draw(),6200)
 clip.addIncident(scale(0,1.4,".map-wrapper",1000,0,"easeInOutExpo"),7200)
+clip.addIncident(scale(1.4,2.4,".map-wrapper",4000,0),12200)
 clip.addIncident(top("100%",".later",1000,0,"easeInOutExpo"),8200)
-clip.addIncident(left("-208%",".big-text-wrapper",6000,0),9200)
-clip.addIncident(top("50%",".news-letter",500,0,"easeInOutExpo"),16200)
+clip.addIncident(left("-258%",".big-text-wrapper",8000,0),9200)
+clip.addIncident(top("50%",".news-letter",500,0,"easeInOutExpo"),18200)
