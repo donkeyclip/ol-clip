@@ -5,12 +5,14 @@ import css from "!!raw-loader!./clip.css";
 
 import { fontSize, fontWeight, height, left, draw,top, scale, GotoIncident } from "./incidents";
 import { initParams } from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 const Maps = loadPlugin(MapsDef);
 
 export const clip = new HTMLClip({
   html,
   css,
   host: document.getElementById("clip"),
+  initParamsValidationRules,
   initParams: initParams[0].value,
   containerParams: {
     width: "1920px",
